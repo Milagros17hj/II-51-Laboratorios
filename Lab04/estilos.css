@@ -1,0 +1,26 @@
+ body{
+      background-color: #e0e0e0;
+    }
+    .form-group label {
+      display: block;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px 0;
+      border: 1px solid #8e8787;
+      border-radius: 5%;
+    }
+
+    .submit-button {
+      padding: 10px 50px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: lch(79.03% 11.46 247.43);
+      /* Un azul más oscuro al pasar el mouse */
+    }
