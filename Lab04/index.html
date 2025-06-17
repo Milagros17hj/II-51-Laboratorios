@@ -4,46 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LAB-03</title>
-  <style>
-    body{
-      background-color: #e0e0e0;
-    }
-    .form-group label {
-      display: block;
-      margin-left: 5px;
-      font-weight: bold;
-    }
-
-    .form-input {
-      width: 100%;
-      padding: 10px 0;
-      border: 1px solid #8e8787;
-      border-radius: 5%;
-    }
-
-    .submit-button {
-      padding: 10px 50px;
-      border-radius: 15px;
-      transition: background-color 0.3s ease;
-    }
-
-    .submit-button:hover {
-      background-color: lch(79.03% 11.46 247.43);
-      /* Un azul más oscuro al pasar el mouse */
-    }
-
-  </style>
+  <title>LAB-04</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-  <!-- encabezado de cuerpo de la pagina-->
+  <!-- encabezado de cuerpo de la página -->
   <header>
-    <h1 align="center">Plataforma Educativa Universidad Central</h1>
+    <h1>Universidad Central</h1>
+    <h2>Plataforma Educativa</h2>
   </header>
 
-  <!-- menu -->
+  <!-- menú -->
   <nav>
     <ul>
       <li><a href="final/">Inicio</a></li>
@@ -70,91 +43,94 @@
             <input class="form-input" type="password" id="password" name="password" required>
           </div>
 
+          <div class="flex-container">
+            <fieldset>
+              <legend>Género</legend>
+              <div>
+                <div>
+                  <input type="radio" value="m" name="género" id="g-m">
+                  <label for="g-m">Masculino</label>
+                </div>
+                <div>
+                  <input type="radio" value="f" name="género" id="g-f">
+                  <label for="g-f">Femenino</label>
+                </div>
+                <div>
+                  <input type="radio" value="o" name="género" id="g-o">
+                  <label for="g-o">Otro</label>
+                </div>
+                <div>
+                  <input type="radio" value="n" name="género" id="g-n">
+                  <label for="g-n">Prefiero no decirlo</label>
+                </div>
+              </div>
+            </fieldset>
 
+            <fieldset>
+              <legend>Seleccione sus intereses:</legend>
+              <div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes1" value="programacion">
+                  <label for="interes1">Programación</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes2" value="diseño">
+                  <label for="interes2">Diseño Gráfico</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes3" value="marketing">
+                  <label for="interes3">Marketing Digital</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes4" value="ciencia">
+                  <label for="interes4">Ciencia de Datos</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes5" value="fotografía">
+                  <label for="interes5">Fotografía</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes6" value="literatura">
+                  <label for="interes6">Literatura</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes7" value="música">
+                  <label for="interes7">Música</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes8" value="desarrollo web">
+                  <label for="interes8">Desarrollo web</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes9" value="inteligencia artificial">
+                  <label for="interes9">Inteligencia Artificial</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="intereses" id="interes10" value="otros">
+                  <label for="interes10">Otros</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
 
-          <fieldset>
-            <legend>Género</legend>
-            <div>
-              <div>
-                <input type="radio" value="m" name="género" id="g-m">
-                <label for="g-m">Masculino</label>
-              </div>
-              <div>
-                <input type="radio" value="f" name="género" id="g-f">
-                <label for="g-f">Femenino</label>
-              </div>
-              <div>
-                <input type="radio" value="o" name="género" id="g-o">
-                <label for="g-o">Otro</label>
-              </div>
-              <div>
-                <input type="radio" value="n" name="género" id="g-n">
-                <label for="g-n">Prefiero no decirlo</label>
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Seleccione sus intereses:</legend>
-            <div>
-              <div>
-                <input type="checkbox" name="intereses" id="interes1" value="programacion">
-                <label for="interes1">Programación</label>
-              </div>
-              <div>
-                <input type="checkbox" name="intereses" id="interes2" value="diseño">
-                <label for="interes2">Diseño Gráfico</label>
-              </div>
-              <div>
-                <input type="checkbox" name="intereses" id="interes3" value="marketing">
-                <label for="interes3">Marketing Digital</label>
-              </div>
-              <div>
-                <input type="checkbox" name="intereses" id="interes4" value="ciencia">
-                <label for="interes4">Ciencia de Datos</label>
-              </div>
-              <div>
-                <input type="checkbox" name="intereses" id="interes5" value="Fotografía">
-                <label for="interes5">Fotografía</label>
-              </div>
-                <div>
-                    <input type="checkbox" name="intereses" id="interes6" value="Literatura">
-                    <label for="interes6">Literatura</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" id="interes7" value="Música">
-                    <label for="interes7">Música</label>
-                </div>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" id="interes8" value="Desarrollo web">
-                    <label for="interes8">Desarrollo web</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" id="interes9" value="Inteligencia Artificial">
-                    <label for="interes9">Inteligencia Artificial</label>
-                </div>
-                </div>
-                <div>
-                    <input type="checkbox" name="intereses" id="interes10" value="otros">
-                    <label for="interes10">Otros</label>
-                </div>
-          </fieldset>
-        <button class="submit-button" type="submit">Registrar</button>
+          <button class="submit-button" type="submit">Registrar</button>
         </fieldset>
       </form>
     </section>
-    <section class="section">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&start=61"
+
+    <section id="video-section">
+      <iframe src="https://www.youtube.com/embed/E1mYs7dw1qc?si=m9-zpgjItdV1yYxj"
         title="Video Incrustado" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2023 Plataforma Educativa Universidad Central</p>
-    <p>Contacto: <a href="mailto:mhernandezj@uc.ac.cr">Milagros Hernández</p>
+    <p>Contacto: <a href="mailto:mhernandezj@uc.ac.cr">Milagros Hernández</a></p>
   </footer>
+
 </body>
 
 </html>
