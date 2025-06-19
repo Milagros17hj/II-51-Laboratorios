@@ -15,7 +15,7 @@
       border-radius: 4px;
       background-color: #eceff5; /* Color de fondo claro para los campos de entrada */
       margin-bottom: 20px;
-      box-shadow: #000000 0px 1px 2px; /* Sombra para los campos de entrada */
+      box-shadow: #000000 1px 1px 0.5px; /* Sombra para los campos de entrada */
     }
 
     .form-input:focus {
@@ -25,7 +25,7 @@
     }
 
     .submit-button:hover {
-      background-color: #1768b9;
+      background-color: #6e9fcf;
       /* Un azul más oscuro al pasar el mouse */
     }
 
@@ -129,7 +129,7 @@
     fieldset {
       border: 1px solid #003366; /* Borde del fieldset */
       border-radius: 10px; /* Bordes redondeados */
-      padding: 20px; /* Espacio interno */
+      padding: 20x; /* Espacio interno */
       margin-bottom: 20px; /* Espacio debajo del fieldset */
       
     }
