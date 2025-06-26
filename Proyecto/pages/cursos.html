@@ -12,38 +12,38 @@
   body { 
     background: linear-gradient(135deg,#8fa5d0,#f5f5f5);
     margin: 0; 
-    padding-top: 70px; 
+    padding-top: 70px; /* ajusta el padding superior para evitar que el contenido se superponga con la barra de navegación */
   }
 
   header {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    text-transform: uppercase;
+    text-transform: uppercase; 
     font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #003366;
     font-size: 70%; 
-    font-weight: 700; 
+    font-weight: 700; /* Negrita */
     letter-spacing: 2px;
     margin-bottom: 30px;
     text-decoration: underline;
   }
 
   nav {
-    position: fixed; 
-    top: 0;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Asegura que esté en la parte superior */
     width: 100%;
-    background-color: #003366; 
+    background-color: #003366;
     padding: 10px 0;
-    z-index: 1000;
-    box-sizing: border-box; 
+    z-index: 1000; /* Que esté encima de todo */
+    box-sizing: border-box;
   }
 
   .logo {
-  width: 60px; 
-  height: auto; 
-  position: absolute; 
-  top: 3px; 
-  left: 50px; 
+    width: 60px; 
+    height: auto; /* Mantiene la proporción del logo */
+    position: absolute; 
+    top: 3px; 
+    left: 50px; 
 
   }
 
@@ -53,8 +53,8 @@
     padding: 0;
     justify-content: center;
     margin:auto ;
-    max-width: 900px; 
-    gap: 30px; 
+    max-width: 900 px; 
+    gap: 30px; /* Espacio entre los elementos de la lista */
   }
 
   nav ul li { /* Estilos para cada elemento de la lista */
@@ -66,20 +66,20 @@
   nav ul li a { /* Estilos para los enlaces de la lista */
     font-weight: bold;
     color: white;
-    padding: 10px 20px;
-    display: flex; 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
-    border-radius: 5px; 
+     padding: 10px 20px;
+     display: flex; 
+     transition: background-color 0.3s ease, transform 0.3s ease; 
+     border-radius: 5px; 
   }
       
-  nav ul li a:hover { 
-    background-color: #00509e; 
-    transform: scale(1.1);
+  nav ul li a:hover { /* Efecto al pasar el mouse sobre el enlace */
+     background-color: #00509e; 
+     transform: scale(1.1);
   }
 
   table {
     width: 90%; 
-    border-collapse: collapse; 
+    border-collapse: collapse; /* Une los bordes para que no se vean dobles */
     margin: 20px auto; 
     background-color: rgb(231, 232, 237);
     box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
@@ -90,32 +90,30 @@
 
   th, td { /* Estilos para celdas de encabezado y cuerpo */
     border: 1px solid #080808; 
-    padding: 12px 15px; 
+    padding: 12px 15px; /* Espacio interno en celdas */
     font-size: 80%;
   }
 
-  thead th { 
+  thead th { /* Estilos para encabezados de la tabla */
     background-color: #003366; 
     color: white; 
     text-transform: uppercase; 
     font-weight: bold;
   }
 
-
   tbody tr:hover { /* Efecto para filas */ /*tbody = cuerpo de la tabla*/ /*tr = fila*/
-    background-color: #dce1f5; 
+    background-color: #dce1f5; /* Efecto para filas */
     cursor: pointer;
-
   }
 
   footer {
-    color: rgb(22, 21, 21); 
-    text-align: center; /* Centra el texto */
-    padding: 10px 0; 
-    position: relative; /* Posición relativa para que no se superponga con el contenido */
-    margin-bottom: 0; /* Asegura que esté al final de la página */
-    width: 100%; /* Ancho completo */
-  }    
+     color: rgb(22, 21, 21); 
+     text-align: center; 
+     padding: 10px 0; 
+     position: relative; 
+     margin-bottom: 0; /* Asegura que esté al final de la página */
+     width: 100%; 
+  }
 
 </style>
 
@@ -128,6 +126,7 @@
   <nav>
     <img src="../images/logo.png" alt="Logo Universidad Central" class="logo">
         <ul>
+          <li><a href="Inicio.html">Inicio</a></li>
            <li><a href="cursos.html">Cursos</a></li>
            <li><a href="profesores.html" >Profesores</a></li>
            <li><a href="estudiantes.html">Estudiantes</a></li>
