@@ -1,0 +1,136 @@
+ /*estilos*/
+ body{
+      background-color: #3684a057;
+    }
+    .form-group label {
+      display: block;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    .form-input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #010313;
+      border-radius: 4px;
+      background-color: #eceff5; /* Color de fondo claro para los campos de entrada */
+      margin-bottom: 20px;
+      box-shadow: #000000 1px 1px 0.5px; /* Sombra para los campos de entrada */
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #003366;
+      /* Cambia el color del borde al hacer foco */
+    }
+
+    .submit-button:hover {
+      background-color: #6e9fcf;
+      /* Un azul más oscuro al pasar el mouse */
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+      font-size: 280%;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+      text-shadow: 0 2px 4px #5e6a95; /* Sombra del texto */
+      margin-bottom: 0%; /* Elimina el margen debajo del título */
+      
+    }
+    h2 {
+      text-align: center;
+      color: #000000;
+      font-size: 150%;
+      font-family: 'Poppins', serif;
+      text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+      text-shadow: 0 2px 2px #5e6a95; /* Sombra del texto */
+      margin-top: 0; /* Elimina el margen encima del subtítulo */
+    }
+
+    main {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      font-size: 110%;
+    }
+    #video-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; /*Margen espacio encima del video */
+    }
+    #video-section iframe {
+        width: 100%;
+        max-width: 600px; /* Ancho máximo del video */
+        height: 340px; /* Altura del video */
+        border-radius: 10px;
+        border: 3px solid #727272; /* Borde del video */
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+      justify-content: center; /* Centra los elementos en el contenedor */
+      gap: 40px; /* Espacio entre los elementos */
+    }
+
+    .submit-button {  
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 50px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      display: block; /* Permite que el botón ocupe todo el ancho del contenedor */
+      margin: 15px auto;
+      box-shadow: 0 4px px #000000; /* Sombra para el botón */
+    }
+    
+    nav ul { /* Estilos para la lista de navegación */
+      list-style: none; /*Me ayuda a quitar las viñetas*/
+      display: flex; /* me permite alinear los elementos en fila horizontal*/
+      padding: 0;
+      justify-content: center; /* Centra los elementos  para que no se vayan a la izq*/
+      background-color: #003366; 
+      border-radius: 10px;
+      width: 53%;
+      margin: auto; /* Centra la barra de navegación en la página */
+      flex-wrap: wrap;
+      margin-bottom: 15px; /* Espacio debajo de la barra de navegación */
+    }
+
+    nav ul li { /* Estilos para cada elemento de la lista */
+        margin: 0 15px;
+        font-size: 110%;
+    }
+
+    nav ul li a { /* Estilos para los enlaces de la lista */
+        font-weight: bold;
+        color: white;
+        padding: 10px 20px;
+        display: flex; /* Permite que el enlace ocupe todo el espacio del elemento */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el cambio de color y escala */
+    }
+      
+    nav ul li a:hover { /* Efecto al pasar el mouse sobre el enlace */
+        background-color: #00509e; 
+        transform: scale(1.1);
+    }
+
+    fieldset {
+      border: 1px solid #003366; /* Borde del fieldset */
+      border-radius: 10px; /* Bordes redondeados */
+      padding: 20x; /* Espacio interno */
+      margin-bottom: 20px; /* Espacio debajo del fieldset */
+      
+    }
