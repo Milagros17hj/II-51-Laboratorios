@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorios II-51</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #0d47a1;
+      margin-top: 20px;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #1a237e;
+      font-weight: normal;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+  </style>
 </head>
+
 <body>
-    <a href="Lab02/index.html">Lab02</a>
-    <a href="Lab03/index.html">Lab03</a>
-    <a href="Lab04/index.html">Lab04</a>
-    <a href="Lab05/index.html">Lab05</a>
+  <h1>Laboratorios II-51</h1>
+  <h2>Estudiante: Milagros Hernández</h2>
+
+  <form>
+    <button type="submit" formaction="Lab02/index.html">Laboratorio 02</button>
+    <button type="submit" formaction="Lab03/index.html">Laboratorio 03</button>
+    <button type="submit" formaction="Lab04/index.html">Laboratorio 04</button>
+    <button type="submit" formaction="Lab05/index.html">Laboratorio 05</button>
+    <button type="submit" formaction="Lab05-Clase/index.html">Laboratorio 05 Clase</button>
+  </form>
 </body>
 </html>
