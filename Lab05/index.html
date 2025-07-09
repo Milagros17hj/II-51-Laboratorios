@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
   <title>Proyecto</title>
-
+      
 </head>
 
 <body>
@@ -17,13 +17,13 @@
     <h1>Universidad Central</h1>
     <h2>Plataforma Educativa</h2>
   </header>
-  <img src="../images/LogoUtransaparente.png" alt="Logo Universidad Central sin fondo" class="logo">
+  <img src="LogoUtransaparente.png" alt="Logo Universidad Central sin fondo" class="logo">
 
   <main>
     <h3 class="titulo-registro">Registro de Usuario</h3>
 
     <div class="registro-container">
-      <form action="login.html" method="post">
+      <form action="login.html" method="post"> <!-- /*se usa post porque se almacena la información sensible del formulario*/ -->
         <fieldset>
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -32,6 +32,7 @@
                 <option selected disabled value="">Seleccione el tipo de identificación</option>
                 <option value="Cédula Fisica Residente">Cédula Física Residente</option>
                 <option value="Cédula Física Nacional">Cédula Física Nacional</option>
+                <option value="Cédula Jurídica">Cédula Jurídica</option>
                 <option value="Número de Pasaporte">Número de Pasaporte</option>
                 <option value="Refugiado">Refugiado</option>
               </select>
@@ -59,8 +60,9 @@
               <input type="email" class="form-control" id="inputEmail" name="correo" required>
             </div>
           </div>
+
           <div class="form-group">
-            <label class="d-block">Género</label>
+            <label class="d-block">Género</label> <!-- /*se usa d-block para que el label ocupe todo el ancho y se vea mejor*/ -->
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="genero" id="generoHombre" value="hombre" required>
               <label class="form-check-label" for="generoHombre">Hombre</label>
@@ -140,7 +142,7 @@
           </div>
 
           <p class="text-login">
-            ¿Ya tienes una cuenta? <a href=#>Iniciar Sesión</a>
+            ¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a>
           </p>
         </fieldset>
       </form>
@@ -148,9 +150,11 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Plataforma Educativa Universidad Central</p>
-    <p id="contacto">Contacto: <a href="mailto:mhernandezj@uc.ac.cr">Milagros Hernández</a></p>
-  </footer>
+  <p>&copy; 2025 Plataforma Educativa Universidad Central</p>
+  <p id="contacto">Contacto: <a href="mailto:mhernandezj@uc.ac.cr">Milagros Hernández</a></p>
+</footer>
+
+  <!-- bootstrap js -->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

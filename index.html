@@ -10,64 +10,78 @@
       margin: 0;
       padding: 0;
       font-family: 'Times New Roman', Times, serif;
-      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      align-items: center; 
+      justify-content: center; 
+      min-height: 700px;
     }
 
     h1 {
       color: #0d47a1;
-      margin-top: 20px;
-      font-size: 2.5rem;
-      text-align: center;
+      font-size: 35px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      color: #1a237e;
-      font-weight: normal;
+      color: #20265f;
+      font-weight: 400;
       margin-bottom: 30px;
-      text-align: center;
+      font-size: 18px;
     }
 
     form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      width: 80%;
-      max-width: 300px;
+      gap: 15px; 
     }
 
+    .container {
+      background-color: #f9f5f5e3;
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 90%; 
+      max-width: 400px; 
+      box-shadow: 0 0 4px #474f9a;
+    }
+
+
     button {
-      background-color: #1976d2;
+      background-color: #2f20a3e4;
       color: white;
       padding: 12px 20px;
       border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
+      border-radius: 10px;
+      font-size: 17px;
       font-weight: bold;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: all 0.3s ease; 
+      box-shadow: 0 4px 6px #6170e4;
     }
 
     button:hover {
       background-color: #0d47a1;
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px #474f9a;
     }
+    
   </style>
 </head>
 
 <body>
-  <h1>Laboratorios II-51</h1>
-  <h2>Estudiante: Milagros Hernández</h2>
+  <div class="container">
+    <h1>Laboratorios II-51</h1>
+    <h2>Estudiante: Milagros Hernández</h2>
 
-  <form>
-    <button type="submit" formaction="Lab02/index.html">Laboratorio 02</button>
-    <button type="submit" formaction="Lab03/index.html">Laboratorio 03</button>
-    <button type="submit" formaction="Lab04/index.html">Laboratorio 04</button>
-    <button type="submit" formaction="Lab05/index.html">Laboratorio 05</button>
-    <button type="submit" formaction="Lab05-Clase/index.html">Laboratorio 05 Clase</button>
-  </form>
+    <form>
+      <button type="submit" formaction="Lab02/index.html">Laboratorio 02</button>
+      <button type="submit" formaction="Lab03/index.html">Laboratorio 03</button>
+      <button type="submit" formaction="Lab04/index.html">Laboratorio 04</button>
+      <button type="submit" formaction="Lab05/index.html">Laboratorio 05</button>
+      <button type="submit" formaction="Lab05-Clase/index.html">Laboratorio 05 Clase</button>
+      <button type="submit" formaction="II-51 TAREA INVESTIGACIÓN/index.html">Trabajo de Investigación 1</button>
+    </form>
+  </div>
 </body>
 </html>
