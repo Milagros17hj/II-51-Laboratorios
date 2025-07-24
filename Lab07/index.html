@@ -5,15 +5,30 @@
   <meta charset="UTF-8">
   <title>Ejercicio Semana 9</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <style>
+    .color {
+      background-color: lightblue;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .oscuro {
+      background-color: #222;
+      color: white;
+    }
+
+    #bloqueTexto {
+      margin-top: 15px;
+    }
+  </style>
 </head>
 
 <body id="main">
 
   <div class="m-3">
-    <i id="tema" class="fa-solid fa-moon" onclick="alternarTema()"></i>
+    <i id="tema" class="fa-solid fa-moon" onclick="alternarTema()" style="cursor:pointer;"></i>
   </div>
 
   <div class="container">
@@ -26,8 +41,13 @@
       </div>
 
       <div class="form-group">
-        <label for="nombre">Apellido:</label>
+        <label for="apellido">Apellido:</label>
         <input type="text" class="form-control" id="apellido" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" class="form-control" id="correo" required>
       </div>
 
       <button type="button" class="btn btn-primary" id="validarBtn"><i class="fa-solid fa-floppy-disk"></i>
@@ -36,7 +56,6 @@
 
     <div class="my-2">
       <p id="mensaje"></p>
-
       <hr>
     </div>
 
@@ -61,10 +80,63 @@
     <button onclick="modificarContador(-1)" class="btn btn-light">Disminuir</button>
   </div>
 
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="script.js"></script>
+  <script>
+    // Validación de formulario
+    document.getElementById("validarBtn").addEventListener("click", function () {
+      const nombre = document.getElementById("nombre").value.trim();
+      const apellido = document.getElementById("apellido").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const mensaje = document.getElementById("mensaje");
+
+      const correoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
+
+      if (nombre === "" || apellido === "" || correo === "") {
+        mensaje.textContent = "Debe completar todos los campos.";
+        mensaje.className = "alert alert-danger";
+      } else if (!correoValido) {
+        mensaje.textContent = "Ingrese un correo válido.";
+        mensaje.className = "alert alert-warning";
+      } else {
+        mensaje.textContent = `Bienvenido, ${nombre} ${apellido}. Tu correo es: ${correo}`;
+        mensaje.className = "alert alert-success";
+      }
+
+      Swal.fire(mensaje.textContent);
+    });
+
+    // jQuery: Agregar y quitar clase
+    $("#agregarClase").click(function () {
+      $("#bloqueTexto").addClass("color");
+    });
+
+    $("#quitarClase").click(function () {
+      $("#bloqueTexto").removeClass("color");
+    });
+
+    // jQuery: Mostrar y ocultar elemento
+    $("#mostrarOcultar").click(function () {
+      $("#elementoOculto").toggle();
+    });
+
+    // Tema claro/oscuro
+    let temaOscuro = false;
+    function alternarTema() {
+      temaOscuro = !temaOscuro;
+      document.getElementById("tema").className = temaOscuro ? "fa-solid fa-sun" : "fa-solid fa-moon";
+      document.getElementById("main").classList.toggle("oscuro");
+    }
+
+    // Contador
+    let contador = 0;
+    const contadorElemento = document.getElementById("contador");
+
+    const modificarContador = (cambio) => {
+      contador += cambio;
+      contadorElemento.textContent = contador;
+    };
+  </script>
 </body>
 
 </html>
