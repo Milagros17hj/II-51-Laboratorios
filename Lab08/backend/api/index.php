@@ -25,11 +25,11 @@ function getAuthorizationHeader() {
 
 $token = getAuthorizationHeader();
 
-//if ($token !== 'Bearer UC2025-II51') {
-//    http_response_code(403);
-//    echo json_encode(['error' => 'Forbidden']);
-//    exit;
-//}
+if ($token !== 'Bearer UC2025-II51') {
+    http_response_code(403);
+    echo json_encode(['error' => 'Forbidden']);
+    exit;
+}
 
 // OK
 header('Content-Type: application/json');
