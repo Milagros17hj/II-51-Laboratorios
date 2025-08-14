@@ -6,14 +6,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h2>Canvas1</h2>
+    <h2>Dibujos</h2>
+    <div class="canvas-grid">
+  <div>
+    <h3>Canvas1</h3>
     <canvas id="canvasArea" width="300" height="200"></canvas><br>
     <button onclick="draw()">Dibujar círculo</button>
+  </div>
 
-    <h2>Canvas2</h2>
+  <div>
+    <h3>Canvas2</h3>
     <canvas id="canvasArea2" width="300" height="200"></canvas><br>
-    <button onclick="draw2()">Dibujar rectangulo</button>
+    <button onclick="draw2()">Dibujar rectángulo</button>
+  </div>
+
+  <div>
+    <h3>Canvas3</h3>
+    <canvas id="canvasArea3" width="300" height="200"></canvas><br>
+    <button onclick="draw3()">Dibujar triángulo</button>
+    <button onclick="fillTriangle()">Rellenar triángulo</button>
+  </div>
+
+  <div>
+    <h3>Canvas4</h3>
+    <canvas id="canvasArea4" width="300" height="200"></canvas><br>
+    <button onclick="draw4()">Dibujar rombo</button>
+  </div>
+</div>
+
 
     <h2>Drag and Drop</h2>
     <div id="drag1" draggable="true" ondragstart="drag(event)">

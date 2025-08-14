@@ -11,7 +11,7 @@
             ctx.fill();
         }
 
-        //function draw2() {
+        function draw2() {
             const canvas = document.getElementById('canvasArea2');
             const ctx = canvas.getContext('2d');
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -34,7 +34,47 @@
             ctx.arc(150, 100, 20, 0, 2 * Math.PI);
             ctx.fillStyle = '#e74c3c';
             ctx.fill();
-        //}
+        }
+
+        //Dibujar el contorno de un triángulo
+        function draw3() {
+            const canvas = document.getElementById('canvasArea3'); 
+            const ctx = canvas.getContext('2d'); 
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+            ctx.beginPath(); 
+            ctx.moveTo(150, 30); 
+            ctx.lineTo(100, 150); 
+            ctx.lineTo(200, 150); 
+            ctx.closePath(); 
+            ctx.strokeStyle = '#000'; // Color del contorno
+            ctx.stroke();
+        }
+
+
+        function fillTriangle() {
+            const canvas = document.getElementById('canvasArea3'); 
+            const ctx = canvas.getContext('2d')
+            ctx.fillStyle = '#3498db'; // Color de relleno
+            ctx.fill(); // Rellena la figura ya trazada
+            }
+
+
+        function draw4() {
+            const canvas = document.getElementById('canvasArea4');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.moveTo(150, 50);   // Punto superior
+            ctx.lineTo(200, 100);  // Punto derecho
+            ctx.lineTo(150, 150);  // Punto inferior
+            ctx.lineTo(100, 100);  // Punto izquierdo
+            ctx.closePath();
+            ctx.fillStyle = '#9b59b6'; // Color morado
+            ctx.fill();
+            ctx.strokeStyle = '#000'; // Contorno negro
+            ctx.stroke();
+
+        }
 
         // Drag and Drop
         function allowDrop(ev) {
