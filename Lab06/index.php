@@ -36,7 +36,7 @@
 
       <div class="form-group">
         <label>Fecha de Nacimiento:</label>
-        <input type="date" name="fecha_nacimiento" required>
+        <input type="date" name="fecha_nacimiento" >
       </div>
 
       <button type="submit" class="btn-submit">Enviar</button>
