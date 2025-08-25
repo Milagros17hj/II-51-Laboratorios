@@ -35,8 +35,7 @@ if ($token !== 'Bearer UC2025-II51') {
 header('Content-Type: application/json');
 
 //USAR EL API KEY DE SUPABASE NUESTRO
-$apikey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpreWlla3N3bXNsYWFyeG12b3FuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzMjA2OTUsImV4cCI6MjA2ODg5NjY5NX0.G8dhbCA7jLtLxipwYS7wrhSGnRMJAqCsvsT_c2HvBPU';
-$urlBase = 'https://zkyiekswmslaarxmvoqn.supabase.co/rest/v1/usuarios';
+include_once 'config.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 function callSupabase($method, $url, $data = null) {
